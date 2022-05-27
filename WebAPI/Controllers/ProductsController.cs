@@ -26,6 +26,7 @@ namespace WebAPI.Controllers
         //[Authorize(Roles = "Product.List")]
         public IActionResult GetList()
         {
+            
             var result = _productService.GetList();
             if (result.Success)
             {
